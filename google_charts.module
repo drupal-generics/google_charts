@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function google_charts_theme($existing, $type, $theme, $path) {
+  return [
+    'google_chart' => [
+      'variables' => [
+        'id' => NULL,
+        'dashboard' => NULL,
+        'votes_nr' => NULL,
+        'values' => NULL,
+      ],
+    ],
+  ];
+}

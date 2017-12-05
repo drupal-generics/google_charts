@@ -1,0 +1,16 @@
+{% if dashboard %}
+  <div id = "{{ id }}"></div>
+{% else %}
+  {% set color_nr = 0 %}
+  <canvas id="{{ id }}" width="200" height="200"></canvas>
+  <div class='result-wrapper'>
+    {% for key,value in values %}
+      {% set color_nr  = color_nr +1 %}
+      {% set percentage = (100 * value) / votes_nr %}
+      <div class="result-bubble">
+        <span class='color{{ color_nr }}'>{{ percentage|round }}%</span>
+        {{ key }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

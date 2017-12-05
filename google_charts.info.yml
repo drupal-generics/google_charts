@@ -1,0 +1,5 @@
+name: Google Charts
+type: module
+description: Adds google charts as blocks.
+package:
+core: 8.x

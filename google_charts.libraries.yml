@@ -1,0 +1,12 @@
+google_charts:
+  version: VERSION
+  js:
+    assets/js/chart.js: {}
+    assets/js/chart_drawer.js: {}
+    assets/js/google_charts.js: {}
+    assets/js/chart_display.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery_once
